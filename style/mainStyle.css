@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass';
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p{
+    font-weight: 400;
+    font-size: .9375rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating_box{
+    border-radius:1.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 26rem;
+    width: 25.75rem;
+    background: radial-gradient(at center top, #232A34, #181E27);
+    color: hsl(217, 12%, 63%);
+    margin-top: 10%;
+}
+
+
+
+#star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #262E38;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+
+#maintitle{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2.4375rem;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 0.9375;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2.4375rem;
+}
+
+#button_rate_section{
+    display: flex;
+    flex-direction: row;
+    height: 51px;
+    width: 341px;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2.4375rem;
+}
+
+
+
+
+#submit_button{
+    border: none;
+    border-radius:1.25rem;
+    height: 45px;
+    width: 341px;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    font-weight: 700;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2.4375rem;
+}
+
+
+#illustration{
+    margin: 0 auto;
+    margin-top: 34px;
+    width: 162px;
+    height: 108px;
+}
+
+#selected{
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262E38;
+    width: 193px;
+    height: 32px;
+    border-radius: 1.5rem;
+    font-size: 14px;
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+}
+
+#title{
+    margin: 0 auto;
+    margin-top: 2.625rem;
+    font-size: 1.5rem;
+}
+
+#subPara{
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    text-align: center;
+    font-size: 0.9375rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    line-height: 1.75rem;
+}
+
+
+input[type="radio"].button_rate {
+    display: none;
+  }
+
+  input[type="radio"].button_rate + label {
+    width: 51px;
+    height: 51px;
+    background-color: #262E38;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  input[type="radio"]:hover + label {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: #181E27;
+  }
+
+  input[type="radio"].button_rate:checked + label {
+    background-color: white;
+    color: #181E27;
+  }
+
+
+@media(max-width:429px) {
+    
+    .rating_box{
+        border-radius:1.25rem;
+        margin: 0 auto;
+        margin-top: 9.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 22.5rem;
+        width: 20.4375rem;
+        background: radial-gradient(at center top, #232A34, #181E27);
+        color: hsl(217, 12%, 63%);
+        padding-bottom: 1.25rem;
+    }
+
+
+
+    #star{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.75rem;
+        width: 2.75rem;
+        border-radius: 50%;
+        background-color: #262E38;
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #maintitle{
+        margin-left: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    p{
+        margin-left: 1.25rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    #button_rate_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+
+    #submit_button{
+        border: none;
+        border-radius:1.25rem;
+        height: 45px;
+        width: 279px;
+        background-color: hsl(25, 97%, 53%);
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        text-transform: uppercase;
+        font-family: 'Overpass';
+        font-weight: 700;
+    }
+
+
+    #illustration{
+        margin: 0 auto;
+        margin-top: 34px;
+        width: 144px;
+        height: 96px;
+    }
+    
+    #selected{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #262E38;
+        width: 168px;
+        height: 32px;
+        border-radius: 1.5rem;
+        margin-top: 24px;
+        font-size: 14px;
+        color: hsl(25, 97%, 53%);
+        font-weight: 200;
+    }
+
+    #title{
+        margin: 0 auto;
+        font-size: 1.5rem;
+        margin-top: 28px;
+    }
+
+    #subPara{
+        margin: 0 auto;
+        text-align: center;
+        font-size: .875rem;
+        margin-top: 26px;
+        margin-bottom: 40px;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+
+    input[type="radio"].button_rate {
+        display: none;
+      }
+
+      input[type="radio"].button_rate + label {
+        width: 44px;
+        height: 44px;
+        background-color: #181E27;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+      }
+
+      input[type="radio"]:hover + label {
+        cursor: pointer;
+        background-color: hsl(25, 97%, 53%);
+        color: #181E27;
+      }
+
+      input[type="radio"].button_rate:checked + label {
+        background-color: white;
+        color: #181E27;
+      }
+
+
+
+
+}
